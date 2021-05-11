@@ -1,0 +1,300 @@
+html, body {
+  background-color:whitesmoke;
+  color: #636b6f;
+  font-family: "Nunito", sans-serif;
+  font-weight: 200;
+  height: 100vh;
+  margin: 0;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+.flex-center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.position-ref {
+  position: relative;
+}
+
+.top-right {
+  position: absolute;
+  right: 10px;
+  top: 18px;
+}
+
+.content {
+  text-align: center;
+}
+
+.links > a {
+  color: #636b6f;
+  padding: 0 6px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.m-b-md {
+  margin-bottom: 30px;
+}
+
+footer {
+  background: #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 50px;
+  text-transform: uppercase;
+  border-bottom: 2px solid;
+  padding: 12px 0;
+  color: #ff7800;
+}
+
+.wrapper {
+  max-width: 1140px;
+  padding: 30px;
+  margin: 40px auto;
+}
+
+/* create pizza form */
+.create-product {
+  background: #FFFEC8;
+  padding: 20px;
+}
+#create-Product-ID{
+  max-width: 1140px;
+  padding: 30px;
+  margin: 40px auto;
+  background: #FFFEC8;
+  padding: 20px;
+  /* background-image: url('../../img/header-bg.png'); */
+}
+
+.create-product label, .create-product select {
+  display: block;
+}
+
+.create-product label {
+  margin-top: 30px;
+}
+
+.create-product select {
+  padding: 8px;
+  width: 200px;
+}
+
+.create-product input[type=checkbox] {
+  margin: 10px;
+}
+
+.create-product input[type=submit] {
+  background: #5e2195;
+  padding: 8px 20px;
+  color: #fff;
+  border: 0;
+  margin-top: 20px;
+}
+
+/* pizza details page */
+.product-details {
+  background: #f7f7f7;
+  padding: 20px;
+}
+
+.product-details p {
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.product-details button {
+  background: #5e2195;
+  padding: 8px 20px;
+  color: #fff;
+  border: 0;
+  margin-top: 20px;
+}
+
+a.back {
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+  color: #5e2195;
+  margin-bottom: 20px;
+}
+
+/* pizza index page */
+.product-index h1 {
+  margin-bottom: 40px;
+}
+.product-index .product-item {
+  margin: 10px 0;
+  padding: 12px;
+  background: #f4f4f4;
+}
+.product-index .product-item img {
+  width: 60px;
+  display: inline-block;
+}
+.product-index .product-item h4 {
+  display: inline-block;
+  font-weight: normal;
+  margin-left: 20px;
+}
+.product-index .product-item h4 a {
+  color: #777;
+  text-decoration: none !important;
+}
+.button {
+  background-color: #ff7800;
+  border: none;
+  color: white;
+  padding: 16px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 8px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #ff7800;
+  border-radius: 10px;
+}
+
+.button1:hover {
+  background-color: #ff7800;
+  color: white;
+  border-radius: 10px;
+}
+.button2{
+  transition-duration: 0.4s;
+}
+.button2:hover{
+  background-color: sandybrown; /* Green */
+  color: white;
+}
+.button4 {
+  background-color: white;
+  color: black;
+  border: 2px solid #7700ff;
+  border-radius: 10px;
+}
+
+.button4:hover {
+  background-color: #7700ff;
+  color: white;
+  border-radius: 10px;
+}
+
+.button3 {
+  background-color: white;
+  color: black;
+  border: 2px solid #ff0000;
+  border-radius: 10px;
+}
+
+.button3:hover {
+  background-color: #ff0000;
+  color: white;
+  border-radius: 10px;
+}
+
+.ratings i {
+  font-size: 16px;
+  color: red
+}
+
+.strike-text {
+  color: red;
+  text-decoration: line-through
+}
+
+.product-image {
+  width: 100%
+}
+
+.dot {
+  height: 7px;
+  width: 7px;
+  margin-left: 6px;
+  margin-right: 6px;
+  margin-top: 3px;
+  background-color: blue;
+  border-radius: 50%;
+  display: inline-block
+}
+
+.spec-1 {
+  color: #938787;
+  font-size: 15px
+}
+
+h5 {
+  font-weight: 400
+}
+
+.para {
+  font-size: 16px
+}
+/* buy products css */
+.card-buy-products {
+  box-shadow: 0 4px 8px 0 sandybrown;
+  width: 400px;
+  height:670px;
+  margin: 4px;
+  text-align: center;
+  font-family: arial;
+  border-radius: 10px;
+  background-color: #FFFEC8;
+  padding:5px;
+}
+.box-buy-products {
+  display: flex;
+  flex-wrap: wrap;
+}
+.img-buy-products{
+  height: 200px; 
+  box-shadow: 0 4px 8px 0 sandybrown;
+  border-radius: 10px;
+  width: 350px;
+  margin:5px auto; 
+  border: 2px solid grey;
+  border-radius: 4px;
+  padding: 5px 2px; 
+  align:center;
+  padding: 2px;
+}
+.page-class{
+  color:sandybrown;
+}
+.contact{
+  text-decoration: underline;
+}
+.single-image{
+  width:800px; padding:10px; 
+  border-radius:15px;
+  box-shadow: 0 4px 8px 0 sandybrown;
+  border: 2px solid grey;
+  border-radius: 4px;
+  padding: 5px 2px; 
+  align:center;
+  padding: 2px;
+}
+.edit-post-image{
+  background-color:sandybrown; 
+  padding:2px; 
+  margin:2px;
+}
