@@ -18,7 +18,7 @@
             <div class="wrapper">
                 <div class="card-buy-products">
                     <img src="{{URL::to($item->image)}}" alt="Avatar" class="img-buy-products">
-                    <h1>{{ $item->product_name }}</h1>
+                    <h3>{{ $item->product_name }}</h3>
                     <!-- <h3>by {{ $item->user_name}}</h3> -->
                     <p class="price">Price : {{$item->price}} taka</p>
                     <p class="contact">Contact Number : {{$item->contact_number}}</p>

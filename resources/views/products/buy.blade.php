@@ -98,9 +98,9 @@
                 
                 <div class="wrapper">
                 <div class="card-buy-products">
-                <img src="{{URL::to($item->image)}}" alt="Avatar" class="img-buy-products">
+                    <img src="{{URL::to($item->image)}}" alt="Avatar" class="img-buy-products">
                 
-                    <h1 style="color:#333333; text-shadow: 2px 2px sandybrown;">{{ $item->product_name }}</h1>
+                    <h3 style="color:#333333; text-shadow: 2px 2px sandybrown;">{{ $item->product_name }}</h3>
                     <!-- <h3 style="font-style: italic;">by {{ $item->user_name}}</h3> -->
                     <p class="price">Price : <b>{{$item->price}} </b> taka</p>
                     @auth
@@ -108,9 +108,7 @@
                     @endauth
                     <p class="card-text">Desciption: {!! \Illuminate\Support\Str::limit($item->description, 100, '...') !!}</p>
                     <a href="{{ route('products.showSingleProduct', ['id_number'=>$item->id]) }}" class="button button1">View Details</a>
-                
                 </div>
-    
                 </div>
                 
         @endforeach
@@ -121,7 +119,8 @@
         </div> 
         <div class="btn btn-warning float-right col-rd-6">
         <a class="float-middle" href="#" style="color:red; background-color:sandybown;">More Products &rarr;</a>
-        </div> 
+        </div>
+</div> 
         
 @endsection
 

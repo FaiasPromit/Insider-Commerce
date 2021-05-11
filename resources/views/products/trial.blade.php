@@ -14,7 +14,7 @@
                     <a href="{{route('products.myadds')}}" class="button button1">My Ads</a>
                     <a href="/about" class="button button1">Edit Profile</a>
                 </div>
-            </div>
+            
 
 <div class="wrapper">
     @foreach($product as $item)
@@ -49,18 +49,22 @@
                             <a href="{{ route('products.buy') }}" class="btn btn-sm btn-warning">Add More Products to Favorites</a>
                         </div>
                     </div>
-</div>
+                </div>
             @endif
         @endforeach
     @endforeach
+</div>                
                 
+        <!-- <div class="btn  float-middle col-rd-6">
+            <h3 class="float-middle ">{{$product->links('pagination::bootstrap-4')}}</h3>
+        </div>  -->
+        
                 
-            {{$product->links('pagination::bootstrap-4')}}
-                <!-- Pager -->
-                 <div class="clearfix">
-                    <a class="btn btn-primary float-right" href="#">More Products &rarr;</a>
-                </div>
-                <h1>Nothing is here for now!</h1>
+     <div class="clearfix">
+        <a class="btn btn-primary float-right" href="#">More Products &rarr;</a>
+    </div>
+ <h1>Nothing is here for now!</h1>
+
 @endsection
 <!-- <div class="wrapper create-product">
         <div class="content">
