@@ -171,10 +171,12 @@ else{
       // $favorite=new Favorite();
       // $favorite=Product::findorFail($user_id);
       // $favorite->delete();
-      $email = Auth::user()->email;
-      $name = Auth::user()->name;
-      $product = Product::where('email_address',$email)->latest()->paginate(6);
-      return view('/products/myadds', ['user_name'=>$name,'product'=> $product]);
+      // $email = Auth::user()->email;
+      // $name = Auth::user()->name;
+      // $product = Product::where('email_address',$email)->latest()->paginate(6);
+      // return view('/products/myadds', ['user_name'=>$name,'product'=> $product]);
+      return redirect('/products/myadds');
+
     }
     public function showSingleProduct($id_number){
       $favorite=new Favorite();
@@ -234,11 +236,14 @@ else{
       $favorite=new Favorite();
       $favorite=Favorite::where('product_id',$favorite_id)->where('user_id',$id)->first();
       $favorite->delete();
-      $product = Product::latest()->paginate(6);
-      $favoriteProductId=DB::table('favorites')
-      ->where('user_id', '=', $id)
-      ->pluck('product_id');
-      return view('/products/trial',['favorite'=>$favoriteProductId,'product'=>$product]);
+      // $product = Product::latest()->paginate(6);
+      // $favoriteProductId=DB::table('favorites')
+      // ->where('user_id', '=', $id)
+      // ->pluck('product_id');
+      // // return view('/products/trial',['favorite'=>$favoriteProductId,'product'=>$product]);
+      // $parameters = ['favorite'=>$favoriteProductId,'product'=>$product];
+      return redirect('/products/myfavorites');
+      //  return redirect('/products/trial')->with('favorite',$favoriteProductId,'product',$product);
     }
     public function deleteAccount()
     {
@@ -260,6 +265,6 @@ else{
         $delete2=DB::table('products')->where('email_address',$email)->delete();
         $delete3=DB::table('users')->where('email',$email)->delete();
         
-        return redirect()->route('home');
+        return redirect('/');
     }
 }
