@@ -21,7 +21,7 @@ class CreateProductsTable extends Migration
             $table->string('category_id');
             $table->string('product_name');
             $table->string('image');
-            $table->string('description');
+            $table->text('description');
             $table->string('price');
             $table->string('contact_number');
             
